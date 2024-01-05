@@ -20,19 +20,19 @@ mv /etc/redsocks.conf /etc/redsocks.conf.bkp
 
 # Download and replace redsocks configuration with bdix.conf
 cd /etc
-wget https://github.com/emonbhuiyan/BDIX-OpenWRT/raw/main/bdix.conf
+wget https://github.com/KZTanvir/BDIX_OpenWRT_ADVanced/raw/main/bdix.conf
 
 # Download domains and IP filtering lists
-wget https://github.com/emonbhuiyan/BDIX-OpenWRT/raw/main/whitelistDomain.txt
-wget https://github.com/emonbhuiyan/BDIX-OpenWRT/raw/main/whitelistDK.txt
-wget https://github.com/emonbhuiyan/BDIX-OpenWRT/raw/main/whitelistIP.txt
+wget https://github.com/KZTanvir/BDIX_OpenWRT_ADVanced/raw/main/whitelistDomain.txt
+wget https://github.com/KZTanvir/BDIX_OpenWRT_ADVanced/raw/main/whitelistDK.txt
+wget https://github.com/KZTanvir/BDIX_OpenWRT_ADVanced/raw/main/whitelistIP.txt
 
 # Backup existing redsocks init script
 mv /etc/init.d/redsocks /etc/init.d/redsocks.bkp
 
 # Download and replace redsocks init script with bdix
 cd /etc/init.d
-wget https://github.com/emonbhuiyan/BDIX-OpenWRT/raw/main/bdix
+wget https://github.com/KZTanvir/BDIX_OpenWRT_ADVanced/raw/main/bdix
 chmod +x /etc/init.d/bdix
 
 # Clean up and display a message

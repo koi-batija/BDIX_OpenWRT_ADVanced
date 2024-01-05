@@ -1,17 +1,11 @@
-# BDIX Bypass Service on OpenWRT Router
-BDIX bypass become very popular in Bangladesh, especially in rural and urban areas. Socks5 is one of the popular proxy protocols here. What if we could use Socks5 proxy on our router? Yeah, we can use Socks5 proxy on the OpenWRT router with Redsocks. I customized Redsocks as BDIX, especially for BDIX proxy users. However, I found a very rare tutorial about how to configure Socks5 proxy on an OpenWRT router. With this tutorial, we can use it on our OpenWRT router easily. To install and configure Socks5 proxy, ensure you have installed OpenWrt on your router. Then run commands as follows:
+# BDIX Bypass Service on OpenWRT Router (ADVANCED)
+To install and configure Socks5 proxy, ensure you have installed OpenWrt on your router. Then run commands as follows:
 
-# Video tutorial
-Installation process described in this video tutorial:
-
-<a href="https://www.youtube.com/watch?v=jDpXC51o984">
-  <img src="https://i.ytimg.com/vi/jDpXC51o984/maxresdefault.jpg" alt="Install BDIX bypass on OpenWRT router" width="500"/>
-</a>
 
 # BDIX proxy service installation:
 Run the following command to install BDIX proxy extension automatically:
 ```
-cd /tmp && wget https://github.com/emonbhuiyan/BDIX-OpenWRT/raw/main/install.sh && chmod +x install.sh && clear && sh install.sh && rm install.sh
+cd /tmp && wget https://github.com/KZTanvir/BDIX_OpenWRT_ADVanced/raw/main/install.sh && chmod +x install.sh && clear && sh install.sh && rm install.sh
 ```
 Just run it and wait for completion. And enjoy.
 
@@ -19,9 +13,18 @@ Just run it and wait for completion. And enjoy.
 ```
 vi /etc/bdix.conf
 ```
+## To update the whitelist Domain, DomainKeyword, and IP Address
+```
+vi /etc/whitelistDomain.txt
+```
+```
+vi /etc/whitelistDK.txt
+```
+```
+vi /etc/whitelistIP.txt
+```
 After the update press `esc` key then `:wq` to save or `:q!` to discard changes
 
-<img src="https://i.imgur.com/8uLp8I9.png" alt="Update proxy IP, Port, Username & Password" width="500"/>
 
 # How to start and stop BDIX:
 
@@ -49,5 +52,3 @@ service bdix enable
 ```
 service bdix disable
 ```
-
-Thanks for following my tutorial. Follow me to get more interesting tips and tricks.
