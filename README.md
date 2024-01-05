@@ -5,7 +5,7 @@ To install and configure Socks5 proxy, ensure you have installed OpenWrt on your
 # BDIX proxy service installation:
 Run the following command to install BDIX proxy extension automatically:
 ```
-cd /tmp && wget https://github.com/KZTanvir/BDIX_OpenWRT_ADVanced/raw/main/install.sh && chmod +x install.sh && clear && sh install.sh && rm install.sh
+cd /tmp && wget https://raw.githubusercontent.com/KZTanvir/BDIX_OpenWRT_ADVanced/master/README.md && chmod +x install.sh && clear && sh install.sh && rm install.sh
 ```
 Just run it and wait for completion. And enjoy.
 
