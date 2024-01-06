@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script: bdix_install.sh
-# Author: [Your Name]
+# Author: [KZTanvir]
 # Description: Installs and configures redsocks for BDIX on OpenWRT.
 
 # Display coder information
@@ -38,5 +38,8 @@ chmod +x /etc/init.d/bdix
 # Clean up and display a message
 cd /
 clear
+echo -e "Re:Developed by [KZTanvir]]"
+echo -e "GitHub: https://github.com/KZTanvir"
+echo -e "Forked From: BDIX-OpenWrt by [emonbhuiyan]"
 echo -e "Installation complete!\n"
 echo -e "Please Edit those 3 files to whitelist domains, domain-keywords and IP addresses\n"
