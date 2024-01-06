@@ -22,12 +22,12 @@ iptable_start() {
     #for whitelst domain only
     while IFS= read -r domains; do
         iptables -t nat -A BDIX -d "$domains" -j RETURN
-    done < /etc/whitelistDK.txt
+    done < /etc/whitelistDomain.txt
 
     #for whitelist domain keywords
     while IFS= read -r keyword; do
         iptables -t nat -A BDIX -m string --string "$keyword" --algo kmp -j RETURN
-    done < /etc/whitelistDomain.txt
+    done < /etc/whitelistDK.txt
 
     #for whitelist ip
     while IFS= read -r ipaddr; do

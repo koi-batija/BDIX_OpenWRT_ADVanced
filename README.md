@@ -23,7 +23,7 @@ vi /etc/whitelistDK.txt
 ```
 vi /etc/whitelistIP.txt
 ```
-After the update press `esc` key then `:wq` to save or `:q!` to discard changes
+After the update press `esc` key then `:wq` to save or `:q!` to discard changes for each file.
 
 
 # How to start and stop BDIX:
